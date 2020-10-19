@@ -1,0 +1,27 @@
+<!--<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" *ngFor="let img of images">
+        <img [src]="img" alt="Imagen del banner">
+    </div>
+  </div>
+</div>-->
+
+
+<swiper [config]="config">
+
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide" *ngFor="let img of images">
+      <img src="img"  alt="Imagen del banner"/>
+    </div>
+
+  </div>
+
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- Add Arrows -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+
+</swiper>
