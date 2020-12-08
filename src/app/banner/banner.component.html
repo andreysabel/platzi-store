@@ -1,27 +1,19 @@
-<!--<div class="swiper-container">
+<!-- Slider main container -->
+<div class="swiper-container">
+  <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
-    <div class="swiper-slide" *ngFor="let img of images">
-        <img [src]="img" alt="Imagen del banner">
-    </div>
+      <!-- Slides -->
+      <div class="swiper-slide" *ngFor="let img of images">
+        <img [src]="img" alt="imagen de banner">
+      </div>
   </div>
-</div>-->
-
-
-<swiper [config]="config">
-
-  <div class="swiper-wrapper">
-
-    <div class="swiper-slide" *ngFor="let img of images">
-      <img src="img"  alt="Imagen del banner"/>
-    </div>
-
-  </div>
-
-  <!-- Add Pagination -->
+  <!-- If we need pagination -->
   <div class="swiper-pagination"></div>
 
-  <!-- Add Arrows -->
-  <div class="swiper-button-next"></div>
+  <!-- If we need navigation buttons -->
   <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
 
-</swiper>
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>

@@ -15,34 +15,6 @@ export class BannerComponent implements OnInit {
       'assets/images/banner-3.webp'
   ];
 
-  config: SwiperOptions = {
-    pagination: { el: '.swiper-pagination', clickable: true },
-    autoHeight: true,
-    allowTouchMove: true,
-    autoplay: {
-      delay: 6000,
-      disableOnInteraction: true
-    },
-    breakpoints: {
-      1024: {
-        slidesPerView: 4
-      },
-      500: {
-        slidesPerView: 3
-      },
-      400: {
-        slidesPerView: 2
-      },
-      300: {
-        slidesPerView: 1
-      }
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
-    },
-    loop: true
-  };
 
 
   constructor() {

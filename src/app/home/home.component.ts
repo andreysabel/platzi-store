@@ -16,10 +16,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(){
-    var mySwiper = new Swiper('.swiper-container', {
-      speed: 400,
-      spaceBetween: 100
-  });
+    this.mySwiper = new Swiper('.swiper-container');
   }
 
 }
